@@ -9,6 +9,13 @@
   }
   
   h1 {
-    text-align: center;
+    text-align: left;
   }
   
+  /* .Season-1-Container {
+     margin-right: 1000px; 
+  } */
+
+  p {
+    text-align: left;
+  }

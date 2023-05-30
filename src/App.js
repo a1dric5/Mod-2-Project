@@ -1,5 +1,4 @@
 import './App.css';
-import Header from './components/header';
 import Nav from './components/navbar';
 
 
@@ -18,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
         <Nav />
         {/* send episodes into HOME */}
         <Home/>

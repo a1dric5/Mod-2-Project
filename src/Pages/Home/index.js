@@ -83,16 +83,53 @@ const Home = () => {
       console.log(season1Episodes);
       setEpisodes(season1Episodes);
     });
+
+    let arraySecondSeason = [
+        { id: 12, episode: 'S02E01', name: 'A Rickle in Time' },
+        { id: 13, episode: 'S02E02', name: 'Mortynight Run' },
+        { id: 14, episode: 'S02E03', name: 'Auto Erotic Assimilation' },
+        { id: 15, episode: 'S02E04', name: 'Total Rickall' },
+        { id: 16, episode: 'S02E05', name: 'Get Schwifty' },
+        { id: 17, episode: 'S02E06', name: 'The Ricks Must Be Crazy' },
+        { id: 18, episode: 'S02E07', name: 'Big Trouble in Little Sanchez' },
+        { id: 19, episode: 'S02E08', name: 'Interdimensional Cable 2: Tempting Fate' },
+        { id: 20, episode: 'S02E09', name: `Look Who's Purging Now` },
+        // missing two more episodes 
+    ];
+
+    let season2Episodes = response.data.results.filter((episode) =>
+        arraySecondSeason.some((seasonEpisode) => episode.name.includes(seasonEpisode.name))
+        );
+
+        console.log(season2Episodes);
+        setEpisodes(season2Episodes);
   }, []);
 
   return (
     <div className="home">
       <h1>Rick and Morty Episodes</h1>
+      <div className="Season-1-Container">
+      <p>Season 1:</p>
+      <br></br>
       <div className="episodes-grid">
         {episodes.map((episode) => (
           <Episode key={episode.id} episode={episode} />
         ))}
       </div>
+    </div>
+
+    <br></br>
+
+    <div className="Season-2-Container">
+        <p>Season 2:</p>
+        <br></br>
+        <div className="episodes-grid">
+        {episodes.map((episode) => (
+          <Episode key={episode.id} episode={episode} />
+        ))}
+      </div>
+
+    </div>
     </div>
   );
 };
