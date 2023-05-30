@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Episode = () => {
+const Episode = ({episode}) => {
   return (
-    <div>Episode</div>
+    <div>{episode.name}</div>
   )
 }
 

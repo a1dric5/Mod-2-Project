@@ -3,7 +3,7 @@ import Header from './components/header';
 import Nav from './components/navbar';
 
 
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import Home from './Pages/Home';
 
 
@@ -20,11 +20,11 @@ function App() {
       <header className="App-header">
         <Header />
         <Nav />
-        {/* send episdoes into HOME */}
+        {/* send episodes into HOME */}
         <Home/>
       
     
-        <Footer />
+        {/* <Footer /> */}
       </header>
     </div>
   );
