@@ -1,21 +1,26 @@
 .home {
     margin: 2rem;
+    margin-left: 115px;
   }
   
   .episodes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   
   h1 {
     text-align: left;
   }
-  
-  /* .Season-1-Container {
-     margin-right: 1000px; 
-  } */
 
   p {
     text-align: left;
+  }
+
+  .blue-link {
+    color: lightblue;
+  }
+  
+  .episodes-grid img {
+    max-width: 200px;
   }
