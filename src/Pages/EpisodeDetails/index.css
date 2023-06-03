@@ -1,3 +1,122 @@
 .EpisodeImage {
-    max-width: 200px;
+    max-width: 1200px;
+    margin-left: 64px;
+    margin-right: 64px;
 }
+
+.EpisodeDetailsContainer {
+    margin: 64px;
+}
+
+/* .EpiImageTitleAirDate{
+    align-items: center;
+    display: flex
+} */
+
+.EpisodeTitleAndAirDate p {
+    display: inline;
+    margin-right: 10px;
+    font-size: 32px;
+}
+
+.EpisodeTitle {
+text-align: left;
+}
+
+.AirDate {
+text-align: right;
+}
+
+.EpisodeSummary {
+text-align: left; 
+font-size: 32px;
+}
+
+.EpisodeSummaryText {
+font-size: 24px;
+}
+
+.WhosThatCharacterText {
+font-size: 32px;
+margin-left: 64px;
+text-align: left;
+}
+
+.WhosThatCharacterInfo p{
+font-size: 24px;
+
+}
+
+.CharacterImage {
+    width: 400px;
+    float: left;
+    margin-left: 64px;
+}
+
+.WhosThatCharacterAndQuiz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .episodeQuiz p{
+   text-align: left;
+  }
+
+  .quizAnswers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 16px; /* Adjust the gap between buttons as needed */
+    list-style: none;
+  }
+  
+  .quizAnswerItem button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00adb5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quizAnswerItem button:hover {
+    background-color: #007d8c;
+  }
+
+  .submitButton {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00adb5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #007d8c;
+  }
+  
+  
+  
+
+  .home {
+    text-align: center;
+  }
+
+  .episodes-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 64px;
+    margin-right: 64px; 
+    margin-bottom: 64px; 
+    /* margin-top: 64px; */
+  }

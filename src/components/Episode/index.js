@@ -18,11 +18,12 @@ const Episode = ({episode}) => {
 
 
   return (
-    <div>
+    <div className="EpisodeTitle">
       <img src={imageUrl} alt={episode.name} />
-      {episode.name}
+      <span>{episode.name}</span>
     </div>
-  )
+  );
+  
 }
 
 export default Episode;

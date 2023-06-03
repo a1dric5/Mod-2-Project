@@ -1,4 +1,4 @@
-.home {
+/*.home {
     margin: 2rem;
     margin-left: 115px;
   }
@@ -8,6 +8,26 @@
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .episodes-grid div:first-child {
+  
+ background-color: #f0f0f0;
+    padding: 16px;
+  }
+
+  .SeasonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .ImageAndEpTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+  }
+  
   
   h1 {
     text-align: left;
@@ -20,7 +40,76 @@
   .blue-link {
     color: lightblue;
   }
+
+  .blue-link div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
   
   .episodes-grid img {
     max-width: 200px;
+  } */
+
+  /* index.css */
+
+  .home {
+    text-align: center;
   }
+  
+  /* .SeasonsContainer {
+    display: grid;
+     grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+    justify-items: center;
+  } */
+
+  .episodes-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 64px;
+    margin-right: 64px; 
+    margin-bottom: 64px; 
+    /* margin-top: 64px; */
+  }
+  
+  .ImageAndEpTitle {
+    width: 100%;
+    text-align: left;
+    font-size: 24px
+  }
+  
+  .ImageAndEpTitle img {
+    width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .blue-link {
+    color: lightblue;
+    text-decoration: none;
+  }
+  
+  .blue-link:hover {
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 64px;
+  }
+
+  p {
+    font-size: 32px;
+    text-align: left;
+    margin-left: 64px;
+  }
+  
+  
+  
+  
+  
