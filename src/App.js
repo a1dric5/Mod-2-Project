@@ -19,18 +19,19 @@ function App() {
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/episode').then((response) => {
       console.log(response.data);
-
-      let season1Episodes = response.data.results.filter((episode) => episode.episode[2] == "1")
-
-
+  
+      let season1Episodes = response.data.results.filter((episode) => episode.episode[2] === "1");
+      let season2Episodes = response.data.results.filter((episode) => episode.episode[2] === "2");
+  
       console.log(season1Episodes);
-
-
-      setEpisodes(season1Episodes);
-    })
-    
-
+      console.log(season2Episodes);
+     
+      setEpisodes([...season1Episodes, ...season2Episodes]);
+    });
   }, []);
+  
+
+  
 
 
   return (

@@ -7,14 +7,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <nav className="footer-nav">
-        <Link to='/'>
-          <a href="Episodes">Episodes</a>
-          </Link>
-          <a href="#">Characters</a>
-          <a href="#">News/Updates</a>
-          <a href="#">Behind The Scenes</a>
-          <a href="#">Merchandise</a>
-          <a href="#">About</a>
+          <Link to="/">Episodes</Link>
+          <Link to="/Characters">Characters</Link>
+          <Link to="/News">News/Updates</Link>
+          <Link to="/BehindTheScenes">Behind The Scenes</Link>
+          <Link to="/Merchandise">Merchandise</Link>
+          <Link to="/About">About</Link>
         </nav>
         <p>&copy; 2023 Rick and Morty</p>
       </div>
@@ -23,4 +21,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
