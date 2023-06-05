@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Rick and Morty React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based web application that utilizes the Rick and Morty API to display information about the characters from the TV show "Rick and Morty". It allows users view detailed information about each character and quiz them on the episode and characters.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- React: A JavaScript library for building user interfaces.
+- JavaScript: The programming language used to develop the application logic.
+- HTML: The markup language for structuring the web pages.
+- CSS: The styling language used to define the presentation of the application.
+- Rick and Morty API: An API that provides data about characters, episodes, and locations from the Rick and Morty TV show.
 
-### `npm start`
+## Approach
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project was built using React to create a modular and reusable component-based architecture. The application state is managed using React hooks, and the data is fetched from the Rick and Morty API using JavaScript's `fetch` function.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application consists of the following components:
 
-### `npm test`
+- `App`: The root component that renders the header and character list.
+- `Header`: Displays the application logo and pages.
+- `Footer`: Displays the application logo and pages.
+- `Episode`: Displays the images and information of each character.
+- `EpisodeDetails`: Displays the images, characters, and quiz of the episode.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application allows users to search characters by name, species, or status. The search functionality filters the character list in real-time as the user types in the search input.
 
-### `npm run build`
+Users can click on a character card to view more detailed information about that character, including their image, status, species, gender, and origin.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live Site
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A live version of the application is deployed on [GitHub Pages](https://a1dric5.github.io/Mod-2-Project).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To run the project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git clone https://github.com/your-username/rick-and-morty-react-app.git`
+2. Navigate to the project directory: `cd rick-and-morty-react-app`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and visit `http://localhost:3000` to see the app in action.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Unsolved Problems
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- .map method of Season 2: Currently, the application only fetches the first season of characters from the API. Fixing this error would allow users to view more characters beyond the first season.
+- Retrieving data beyong season 2: Unfortunately, the available API only had access to season 2. The application would be more enjoyable if I had access to more content.
+- Error handling: The application does not handle errors that may occur during API requests. Implementing proper error handling and displaying error messages would improve the user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Feel free to contribute to the project by addressing these unsolved problems or adding new features!
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
